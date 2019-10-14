@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_title_view"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_register_person"
+            android:layout_width="@dimen/mm_80"
+            android:layout_height="@dimen/mm_80"
+            android:layout_marginLeft="@dimen/mm_150"
+            android:layout_marginTop="@dimen/mm_145"
+            android:src="@drawable/ic_person_light_blue_500_24dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_line_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/et_register_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_register_name"
+            android:layout_width="0mm"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mm_30"
+            android:layout_marginRight="@dimen/mm_150"
+            android:layout_marginTop="@dimen/mm_145"
+            android:background="@null"
+            android:hint="@string/login_hint_name"
+            android:paddingBottom="@dimen/mm_30"
+            android:paddingTop="@dimen/mm_30"
+            android:textSize="@dimen/mm_45"
+            app:layout_constraintBottom_toTopOf="@id/tv_line_name"
+            app:layout_constraintLeft_toRightOf="@+id/iv_register_person"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_line_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mm_2"
+            android:layout_marginLeft="@dimen/mm_260"
+            android:layout_marginRight="@dimen/mm_150"
+            android:background="@color/colorLine"
+            app:layout_constraintBottom_toTopOf="@+id/et_register_pwd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_register_name" />
+
+        <ImageView
+            android:id="@+id/iv_register_pwd"
+            android:layout_width="@dimen/mm_80"
+            android:layout_height="@dimen/mm_80"
+            android:layout_marginLeft="@dimen/mm_150"
+            android:layout_marginTop="@dimen/mm_45"
+            android:src="@drawable/ic_lock_light_blue_500_24dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_line_pwd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/et_register_pwd"
+            app:layout_constraintTop_toBottomOf="@+id/tv_line_name" />
+
+        <EditText
+            android:id="@+id/et_register_pwd"
+            android:layout_width="0mm"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mm_30"
+            android:layout_marginRight="@dimen/mm_150"
+            android:layout_marginTop="@dimen/mm_45"
+            android:background="@null"
+            android:hint="@string/login_hint_pwd"
+            android:inputType="textPassword"
+            android:paddingBottom="@dimen/mm_30"
+            android:paddingTop="@dimen/mm_30"
+            android:textSize="@dimen/mm_45"
+            app:layout_constraintBottom_toTopOf="@id/tv_line_pwd"
+            app:layout_constraintLeft_toRightOf="@+id/iv_register_pwd"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_line_name" />
+
+        <TextView
+            android:id="@+id/tv_line_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mm_2"
+            android:layout_marginLeft="@dimen/mm_260"
+            android:layout_marginRight="@dimen/mm_150"
+            android:background="@color/colorLine"
+            app:layout_constraintBottom_toTopOf="@+id/et_register_repwd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_register_pwd" />
+
+        <ImageView
+            android:id="@+id/iv_register_repwd"
+            android:layout_width="@dimen/mm_80"
+            android:layout_height="@dimen/mm_80"
+            android:layout_marginLeft="@dimen/mm_150"
+            android:layout_marginTop="@dimen/mm_45"
+            android:src="@drawable/ic_lock_light_blue_500_24dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_line_repwd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/et_register_repwd"
+            app:layout_constraintTop_toBottomOf="@+id/tv_line_pwd" />
+
+        <EditText
+            android:id="@+id/et_register_repwd"
+            android:layout_width="0mm"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mm_30"
+            android:layout_marginRight="@dimen/mm_150"
+            android:layout_marginTop="@dimen/mm_45"
+            android:background="@null"
+            android:hint="@string/login_hint_repwd"
+            android:inputType="textPassword"
+            android:paddingBottom="@dimen/mm_30"
+            android:paddingTop="@dimen/mm_30"
+            android:textSize="@dimen/mm_45"
+            app:layout_constraintBottom_toTopOf="@id/tv_line_repwd"
+            app:layout_constraintLeft_toRightOf="@+id/iv_register_repwd"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_line_pwd" />
+
+        <TextView
+            android:id="@+id/tv_line_repwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mm_2"
+            android:layout_marginLeft="@dimen/mm_260"
+            android:layout_marginRight="@dimen/mm_150"
+            android:background="@color/colorLine"
+            app:layout_constraintBottom_toTopOf="@+id/btn_register"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_register_repwd" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mm_120"
+            android:layout_marginLeft="@dimen/mm_150"
+            android:layout_marginRight="@dimen/mm_150"
+            android:layout_marginTop="@dimen/mm_120"
+            android:background="@drawable/shape_login_circle"
+            android:text="@string/at_once_register"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/mm_50"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_line_repwd" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

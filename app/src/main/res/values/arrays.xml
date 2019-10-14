@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ques_type">
+        <item>界面错乱</item>
+        <item>界面卡顿</item>
+        <item>异常信息</item>
+        <item>系统BUG</item>
+        <item>无响应</item>
+        <item>系统崩溃</item>
+        <item>权限不足</item>
+        <item>设置出错</item>
+        <item>内存泄漏</item>
+        <item>其他</item>
+    </array>
+
+    <array name="ques_device">
+        <item>华为</item>
+        <item>小米</item>
+        <item>ViVo</item>
+        <item>OPPO</item>
+        <item>三星</item>
+        <item>洛基亚</item>
+        <item>苹果</item>
+        <item>金立</item>
+        <item>索尼</item>
+        <item>摩托罗拉</item>
+    </array>
+
+</resources>

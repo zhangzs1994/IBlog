@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_login_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.tydk.mymvp.activity.LoginActivity">
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/mwh_login_wave"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mm_600"
+        app:mwhCloseColor="@color/colorBlue"
+        app:mwhColorAlpha="0.45"
+        app:mwhGradientAngle="90"
+        app:mwhProgress="1"
+        app:mwhStartColor="@color/colorBlueLight"
+        app:mwhVelocity="3"
+        app:mwhWaveHeight="@dimen/mm_150"
+        app:mwhWaves="MultiWave" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mm_200"
+        android:text="我的APP"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/mm_80"
+        android:typeface="sans"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_login_person"
+        android:layout_width="@dimen/mm_80"
+        android:layout_height="@dimen/mm_80"
+        android:layout_marginLeft="@dimen/mm_150"
+        android:layout_marginTop="@dimen/mm_45"
+        android:src="@drawable/ic_person_light_blue_500_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_line_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/et_login_name"
+        app:layout_constraintTop_toBottomOf="@+id/mwh_login_wave" />
+
+    <EditText
+        android:id="@+id/et_login_name"
+        android:layout_width="0mm"
+        android:layout_height="@dimen/mm_150"
+        android:layout_marginLeft="@dimen/mm_30"
+        android:layout_marginRight="@dimen/mm_150"
+        android:layout_marginTop="@dimen/mm_45"
+        android:background="@null"
+        android:hint="@string/login_hint_name"
+        android:textSize="@dimen/mm_45"
+        app:layout_constraintBottom_toTopOf="@id/tv_line_name"
+        app:layout_constraintLeft_toRightOf="@+id/iv_login_person"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mwh_login_wave" />
+
+    <TextView
+        android:id="@+id/tv_line_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mm_2"
+        android:layout_marginLeft="@dimen/mm_150"
+        android:layout_marginRight="@dimen/mm_150"
+        android:background="@color/colorLine"
+        app:layout_constraintBottom_toTopOf="@+id/et_login_pwd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_name" />
+
+    <ImageView
+        android:id="@+id/iv_login_lock"
+        android:layout_width="@dimen/mm_80"
+        android:layout_height="@dimen/mm_80"
+        android:layout_marginLeft="@dimen/mm_150"
+        android:layout_marginTop="@dimen/mm_45"
+        android:src="@drawable/ic_lock_light_blue_500_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_line_pwd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/et_login_pwd"
+        app:layout_constraintTop_toBottomOf="@+id/tv_line_name" />
+
+    <EditText
+        android:id="@+id/et_login_pwd"
+        android:layout_width="0mm"
+        android:layout_height="@dimen/mm_150"
+        android:layout_marginLeft="@dimen/mm_30"
+        android:layout_marginTop="@dimen/mm_45"
+        android:background="@null"
+        android:hint="@string/login_hint_pwd"
+        android:inputType="textPassword"
+        android:textSize="@dimen/mm_45"
+        app:layout_constraintBottom_toTopOf="@id/tv_line_pwd"
+        app:layout_constraintLeft_toRightOf="@+id/iv_login_lock"
+        app:layout_constraintRight_toLeftOf="@+id/iv_login_visibility"
+        app:layout_constraintTop_toBottomOf="@+id/tv_line_name" />
+
+
+    <ImageView
+        android:id="@+id/iv_login_visibility"
+        android:layout_width="@dimen/mm_150"
+        android:layout_height="@dimen/mm_150"
+        android:layout_marginRight="@dimen/mm_150"
+        android:layout_marginTop="@dimen/mm_45"
+        android:padding="@dimen/mm_40"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_visibility_light_blue_500_24dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_line_pwd"
+        app:layout_constraintLeft_toRightOf="@+id/et_login_pwd"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_line_name" />
+
+    <TextView
+        android:id="@+id/tv_line_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mm_2"
+        android:layout_marginLeft="@dimen/mm_150"
+        android:layout_marginRight="@dimen/mm_150"
+        android:background="@color/colorLine"
+        app:layout_constraintBottom_toTopOf="@+id/tv_login_forget"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_pwd" />
+
+    <TextView
+        android:id="@+id/tv_login_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mm_120"
+        android:layout_marginRight="@dimen/mm_150"
+        android:background="@null"
+        android:gravity="center"
+        android:text="@string/login_forget_pwd"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textColor="@color/colorBlueLight"
+        android:textSize="@dimen/mm_45"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_line_pwd" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mm_120"
+        android:layout_marginLeft="@dimen/mm_150"
+        android:layout_marginRight="@dimen/mm_150"
+        android:layout_marginTop="@dimen/mm_100"
+        android:background="@drawable/shape_login_circle"
+        android:text="@string/login"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/mm_50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_forget" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mm_120"
+        android:layout_marginLeft="@dimen/mm_150"
+        android:layout_marginRight="@dimen/mm_150"
+        android:layout_marginTop="@dimen/mm_50"
+        android:background="@drawable/shape_login_register"
+        android:text="@string/register"
+        android:textColor="@color/colorBlueLight"
+        android:textSize="@dimen/mm_50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+</android.support.constraint.ConstraintLayout>

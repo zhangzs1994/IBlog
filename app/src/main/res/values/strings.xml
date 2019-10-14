@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">我的MVP</string>
+    <string name="refresh_header_pulling">下拉可以刷新</string>
+    <string name="refresh_header_refreshing">正在刷新...</string>
+    <string name="refresh_header_loading">正在加载...</string>
+    <string name="refresh_header_release">释放立即刷新</string>
+    <string name="refresh_header_finish">刷新完成</string>
+    <string name="refresh_header_failed">刷新失败</string>
+    <string name="refresh_header_update">上次更新 M-d HH:mm</string>
+    <string name="refresh_header_secondary">释放进入二楼</string>
+    <string name="refresh_footer_pulling">上拉加载更多</string>
+    <string name="refresh_footer_release">释放立即加载</string>
+    <string name="refresh_footer_loading">正在加载...</string>
+    <string name="refresh_footer_refreshing">正在刷新...</string>
+    <string name="refresh_footer_finish">加载完成</string>
+    <string name="refresh_footer_failed">加载失败</string>
+    <string name="refresh_footer_nothing">没有更多数据了</string>
+    <string name="login_hint_name">请输入用户名</string>
+    <string name="login_hint_pwd">请输入密码</string>
+    <string name="login_hint_repwd">请确认密码</string>
+    <string name="login_forget_pwd">忘记密码?</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="at_once_register">立即注册</string>
+    <string name="main_index">首页</string>
+    <string name="main_list">列表</string>
+    <string name="main_zxing">扫一扫</string>
+    <string name="main_contact">联系人</string>
+    <string name="main_user">我的</string>
+    <string name="index_hint_search">请输入搜索内容</string>
+    <string name="mine_trends">动态</string>
+    <string name="mine_fans">粉丝</string>
+    <string name="mine_follow">关注</string>
+    <string name="mine_info">消息</string>
+    <string name="mine_setting">设置</string>
+    <string name="mine_question">问题反馈</string>
+    <string name="mine_about">关于</string>
+    <string name="about_me">关于我们</string>
+    <string name="scan_title">二维码</string>
+    <string name="scan_album">相册</string>
+    <string name="scan_tips">将二维码放入框内，即可自动扫描</string>
+    <string name="ques_feed_back">问题反馈</string>
+    <string name="ques_name">姓名</string>
+    <string name="ques_hint_name">请输入姓名</string>
+    <string name="ques_time">时间</string>
+    <string name="ques_hint_time">请选择时间</string>
+    <string name="ques_address">地区</string>
+    <string name="ques_hint_address">请选择地区</string>
+    <string name="ques_type">问题类型</string>
+    <string name="ques_hint_type">请选择问题类型</string>
+    <string name="ques_device">设备信息</string>
+    <string name="ques_hint_device">请选择设备信息</string>
+    <string name="ques_desc">问题描述</string>
+    <string name="ques_hint_desc">请输入问题描述</string>
+    <string name="ques_picture">照片</string>
+    <string name="submit">提交</string>
+    <string name="menu_open">菜单开启</string>
+    <string name="menu_close">菜单关闭</string>
+    <string name="login_exit">退出登录</string>
+
+    <string name="about_desc"><![CDATA[
+    <h2>网站内容</h2>
+        <p>\t\t\t\t本网站每天新增20~30篇优质文章，并加入到现有分类中，力求整理出一份优质而又详尽的知识体系，闲暇时间不妨上来学习下知识；
+        除此以外，并为大家提供平时开发过程中常用的工具以及常用的网址导航。</p>
+        <p>\t\t\t\t当然这只是我们目前的功能，未来我们将提供更多更加便捷的功能...</p>
+        <p>\t\t\t\t如果您有任何好的建议:</p>
+            <p><b>\t\t\t\t\t\t\t\t关于网站排版</b></p>
+            <p><b>\t\t\t\t\t\t\t\t关于新增常用网址以及工具</b></p>
+            <p><b>\t\t\t\t\t\t\t\t未来你希望增加的功能等</b></p>
+        <p>\t\t\t\t可以在<a href="https://github.com/hongyangAndroid/wanandroid" target="_blank">https://github.com/hongyangAndroid/xueandroid</a>项目中以issue的形式提出，我将及时跟进。</p>
+        <p>\t\t\t\t如果您希望长期关注本站，可以加入我们的QQ群：<b>591683946</b></p>
+    <h2>关于App</h2>
+	    <p>\t\t\t\t本App纯属个人作品，完全开源。如果您在使用的过程中遇到问题或有好的建议需要反馈，请点击右上角菜单选项联系作者，谢谢合作。</p>
+    ]]></string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

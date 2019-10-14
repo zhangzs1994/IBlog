@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mm_120"
+        android:background="#f2f7f9">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="@dimen/mm_150"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/mm_48"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="#0073FF"/>
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="@dimen/mm_150"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/mm_48"
+            android:text="全选"
+            android:layout_marginLeft="@dimen/mm_100"
+            android:layout_toRightOf="@+id/tv_cancel"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:id="@+id/tv_not_all"
+            android:layout_width="@dimen/mm_150"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/mm_48"
+            android:text="反选"
+            android:layout_marginRight="@dimen/mm_100"
+            android:layout_toLeftOf="@+id/tv_sure"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="@dimen/mm_150"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/mm_48"
+            android:text="确定"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="#0073FF"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mm_2"
+        android:background="#f2f2f2"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_view" />
+
+    <ScrollView
+        android:id="@+id/sc_ques_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/mm_200"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mm_50"
+                    android:paddingBottom="@dimen/mm_30"
+                    android:paddingTop="@dimen/mm_30"
+                    android:text="@string/ques_name"
+                    android:textColor="@color/colorFont1"
+                    android:textSize="@dimen/mm_45" />
+
+                <EditText
+                    android:id="@+id/et_ques_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mm_30"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/ques_hint_name"
+                    android:paddingBottom="@dimen/mm_30"
+                    android:paddingTop="@dimen/mm_30"
+                    android:textColor="@color/colorFont2"
+                    android:textSize="@dimen/mm_45" />
+
+                <ImageView
+                    android:layout_width="@dimen/mm_60"
+                    android:layout_height="@dimen/mm_60"
+                    android:layout_marginLeft="@dimen/mm_30"
+                    android:layout_marginRight="@dimen/mm_50"
+                    android:src="@drawable/right_arrow"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mm_1"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:id="@+id/ll_ques_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/mm_200"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mm_50"
+                    android:paddingBottom="@dimen/mm_30"
+                    android:paddingTop="@dimen/mm_30"
+                    android:text="@string/ques_time"
+                    android:textColor="@color/colorFont1"
+                    android:textSize="@dimen/mm_45" />
+
+                <TextView
+                    android:id="@+id/tv_ques_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mm_30"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="@string/ques_hint_time"
+                    android:paddingBottom="@dimen/mm_30"
+                    android:paddingTop="@dimen/mm_30"
+                    android:textColor="@color/colorFont2"
+                    android:textSize="@dimen/mm_45" />
+
+                <ImageView
+                    android:layout_width="@dimen/mm_60"
+                    android:layout_height="@dimen/mm_60"
+                    android:layout_marginLeft="@dimen/mm_30"
+                    android:layout_marginRight="@dimen/mm_50"
+                    android:src="@drawable/right_arrow" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mm_1"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:id="@+id/ll_ques_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/mm_200"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mm_50"
+                    android:paddingBottom="@dimen/mm_30"
+                    android:paddingTop="@dimen/mm_30"
+                    android:text="@string/ques_address"
+                    android:textColor="@color/colorFont1"
+                    android:textSize="@dimen/mm_45" />
+
+                <TextView
+                    android:id="@+id/tv_ques_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mm_30"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="@string/ques_hint_address"
+                    android:paddingBottom="@dimen/mm_30"
+                    android:paddingTop="@dimen/mm_30"
+                    android:textColor="@color/colorFont2"
+                    android:textSize="@dimen/mm_45" />
+
+                <ImageView
+                    android:layout_width="@dimen/mm_60"
+                    android:layout_height="@dimen/mm_60"
+                    android:layout_marginLeft="@dimen/mm_30"
+                    android:layout_marginRight="@dimen/mm_50"
+                    android:src="@drawable/right_arrow" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mm_1"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:id="@+id/ll_ques_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/mm_200"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mm_50"
+                    android:paddingBottom="@dimen/mm_30"
+                    android:paddingTop="@dimen/mm_30"
+                    android:text="@string/ques_type"
+                    android:textColor="@color/colorFont1"
+                    android:textSize="@dimen/mm_45" />
+
+                <TextView
+                    android:id="@+id/tv_ques_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mm_30"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="@string/ques_hint_type"
+                    android:paddingBottom="@dimen/mm_30"
+                    android:paddingTop="@dimen/mm_30"
+                    android:textColor="@color/colorFont2"
+                    android:textSize="@dimen/mm_45" />
+
+                <ImageView
+                    android:layout_width="@dimen/mm_60"
+                    android:layout_height="@dimen/mm_60"
+                    android:layout_marginLeft="@dimen/mm_30"
+                    android:layout_marginRight="@dimen/mm_50"
+                    android:src="@drawable/right_arrow" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mm_1"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:id="@+id/ll_ques_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/mm_200"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mm_50"
+                    android:paddingBottom="@dimen/mm_30"
+                    android:paddingTop="@dimen/mm_30"
+                    android:text="@string/ques_device"
+                    android:textColor="@color/colorFont1"
+                    android:textSize="@dimen/mm_45" />
+
+                <TextView
+                    android:id="@+id/tv_ques_device"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mm_30"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="@string/ques_hint_device"
+                    android:paddingBottom="@dimen/mm_30"
+                    android:paddingTop="@dimen/mm_30"
+                    android:textColor="@color/colorFont2"
+                    android:textSize="@dimen/mm_45" />
+
+                <ImageView
+                    android:layout_width="@dimen/mm_60"
+                    android:layout_height="@dimen/mm_60"
+                    android:layout_marginLeft="@dimen/mm_30"
+                    android:layout_marginRight="@dimen/mm_50"
+                    android:src="@drawable/right_arrow" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mm_1"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mm_20"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/mm_200"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mm_50"
+                    android:layout_marginTop="@dimen/mm_20"
+                    android:paddingBottom="@dimen/mm_30"
+                    android:paddingTop="@dimen/mm_30"
+                    android:text="@string/ques_desc"
+                    android:textColor="@color/colorFont1"
+                    android:textSize="@dimen/mm_45" />
+
+                <EditText
+                    android:id="@+id/et_ques_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mm_20"
+                    android:layout_marginLeft="@dimen/mm_30"
+                    android:layout_marginRight="@dimen/mm_30"
+                    android:layout_marginTop="@dimen/mm_20"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_ques_desc"
+                    android:gravity="start"
+                    android:hint="@string/ques_hint_desc"
+                    android:minHeight="@dimen/mm_300"
+                    android:padding="@dimen/mm_30"
+                    android:textColor="@color/colorFont2"
+                    android:textSize="@dimen/mm_45" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mm_20"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/mm_200"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mm_50"
+                    android:paddingBottom="@dimen/mm_30"
+                    android:paddingTop="@dimen/mm_30"
+                    android:text="@string/ques_picture"
+                    android:textColor="@color/colorFont1"
+                    android:textSize="@dimen/mm_45" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_ques_picture"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mm_30"
+                    android:layout_marginRight="@dimen/mm_30"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_ques_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mm_120"
+                android:layout_marginLeft="@dimen/mm_150"
+                android:layout_marginRight="@dimen/mm_150"
+                android:layout_marginTop="@dimen/mm_100"
+                android:background="@drawable/shape_login_circle"
+                android:text="@string/submit"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/mm_50" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

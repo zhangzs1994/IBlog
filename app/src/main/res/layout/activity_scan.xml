@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_scan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_scan_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_scan_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mm_204"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorBlack"
+        android:paddingTop="@dimen/mm_44">
+
+        <ImageView
+            android:id="@+id/iv_scan_back"
+            android:layout_width="@dimen/mm_150"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/mm_35"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/scan_title"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/mm_55" />
+
+        <TextView
+            android:id="@+id/tv_scan_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingLeft="@dimen/mm_30"
+            android:paddingRight="@dimen/mm_30"
+            android:text="@string/scan_album"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/mm_45" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/mm_248"
+        android:gravity="center"
+        android:text="@string/scan_tips"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/mm_40" />
+</RelativeLayout>
