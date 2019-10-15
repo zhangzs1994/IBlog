@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">我的MVP</string>
+    <string name="app_name">IBlog</string>
     <string name="refresh_header_pulling">下拉可以刷新</string>
     <string name="refresh_header_refreshing">正在刷新...</string>
     <string name="refresh_header_loading">正在加载...</string>
