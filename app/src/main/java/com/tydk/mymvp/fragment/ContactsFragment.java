@@ -47,7 +47,6 @@ public class ContactsFragment extends BaseFragment<ContactsPresenter> implements
 
     @Override
     public void initView(View view) {
-        mPresenter.attachView(this);
         setTitle("联系人");
         hideBackIcon();
         rvContacts.setLayoutManager(new LinearLayoutManager(getActivity()));

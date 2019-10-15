@@ -45,7 +45,6 @@ import butterknife.Unbinder;
 @ContentView(R.layout.fragment_article)
 public class ArticleFragment extends BaseFragment<ArticlePresenter> implements ArticleContract.View {
 
-
     @BindView(R.id.iv_back)
     ImageView ivBack;
     @BindView(R.id.tv_title)
@@ -66,7 +65,6 @@ public class ArticleFragment extends BaseFragment<ArticlePresenter> implements A
 
     @Override
     public void initView(View view) {
-        mPresenter.attachView(this);
         setTitle("文章列表");
         hideBackIcon();
         initRecycler();

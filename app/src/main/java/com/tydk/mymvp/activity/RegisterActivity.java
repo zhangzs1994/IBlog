@@ -63,7 +63,6 @@ public class RegisterActivity extends BaseActivity<RegisterPresenter> implements
 
     @Override
     public void initView() {
-        mPresenter.attachView(this);
         setTitle("注册");
     }
     

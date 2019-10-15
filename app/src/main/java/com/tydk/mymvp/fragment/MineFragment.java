@@ -46,7 +46,6 @@ import butterknife.Unbinder;
 @ContentView(R.layout.fragment_mine)
 public class MineFragment extends BaseFragment<MinePresenter> implements MineContract.View {
 
-
     @BindView(R.id.tv_mine_title)
     TextView tvMineTitle;
     @BindView(R.id.iv_mine_head)
@@ -104,7 +103,6 @@ public class MineFragment extends BaseFragment<MinePresenter> implements MineCon
 
     @Override
     public void initView(View view) {
-        mPresenter.attachView(this);
         isOpen = false;
         setTitle("我的");
         GlideUtils.getInstance()

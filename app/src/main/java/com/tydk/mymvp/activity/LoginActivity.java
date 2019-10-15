@@ -76,7 +76,7 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
 
     @Override
     public void initView() {
-        mPresenter.attachView(this);
+
         initPermissions();
         etLoginName.setText("zzs123");
         etLoginName.setSelection(etLoginName.getText().length());

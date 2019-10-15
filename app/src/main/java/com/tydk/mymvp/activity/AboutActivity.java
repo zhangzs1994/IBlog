@@ -40,7 +40,6 @@ public class AboutActivity extends BaseActivity<AboutPresenter> implements About
 
     @Override
     public void initView() {
-        mPresenter.attachView(this);
         GlideUtils.getInstance()
                 .loadImage(this,
                         "http://ossweb-img.qq.com/images/lol/web201310/skin/big55004.jpg",

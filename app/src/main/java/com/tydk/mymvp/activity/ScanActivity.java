@@ -44,7 +44,6 @@ public class ScanActivity extends BaseActivity<ScanPresenter> implements ScanCon
 
     @Override
     public void initView() {
-        mPresenter.attachView(this);
         initCaptureFragment();
     }
 

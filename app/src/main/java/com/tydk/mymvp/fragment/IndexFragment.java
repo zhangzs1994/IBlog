@@ -83,7 +83,6 @@ public class IndexFragment extends BaseFragment<IndexPresenter> implements Index
 
     @Override
     public void initView(View view) {
-        mPresenter.attachView(this);
         onDrawerListener();
         initRecycler();
         mPresenter.getBanner(getActivity());

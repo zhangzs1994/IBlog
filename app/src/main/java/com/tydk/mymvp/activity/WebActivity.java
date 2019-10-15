@@ -42,7 +42,6 @@ public class WebActivity extends BaseActivity<WebPresenter> implements WebContra
 
     @Override
     public void initView() {
-        mPresenter.attachView(this);
         if (getIntent() != null) {
             url = getIntent().getStringExtra("url");
         }

@@ -101,7 +101,6 @@ public class QuestionActivity extends BaseActivity<QuestionPresenter> implements
 
     @Override
     public void initView() {
-        mPresenter.attachView(this);
         setTitle("问题反馈");
         initJsonData();
         initRecycler();
