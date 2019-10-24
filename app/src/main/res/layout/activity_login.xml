@@ -15,6 +15,7 @@
         app:mwhColorAlpha="0.45"
         app:mwhGradientAngle="90"
         app:mwhProgress="1"
+        android:visibility="invisible"
         app:mwhStartColor="@color/colorBlueLight"
         app:mwhVelocity="3"
         app:mwhWaveHeight="@dimen/mm_150"
